@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Belajar Flexbox | bagian 1</title>
+  </head>
+  <body>
+    <!-- Navbar  -->
+    <nav class="navbar">
+      <h1 class="logo">ADVENTURE</h1>
+      <ul class="nav-links">
+        <li class="active"><a href="#"></a>Home</li>
+        <li><a href="#"></a>Tours</li>
+        <li><a href="#"></a>Explore</li>
+        <li><a href="#"></a>About</li>
+        <li class="ctn"><a href="#"></a>About</li>
+      </ul>
+    </nav>
+    <img src="img/menu-btn.png" class="menu-btn" alt="Menu" />
+
+    <header>
+      <div class="header-content">
+        <h2>Explore The Colorful World</h2>
+        <div class="line"></div>
+        <h1>A WONDERFUL GIFT</h1>
+        <a href="#" class="ctn">Learn More</a>
+      </div>
+    </header>
+
+    <!-- === EVENTS ==== -->
+    <section class="events">
+      <div class="title">
+        <h1>UPCOMING EVENTS</h1>
+        <div class="line"></div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="img/img1.png" alt="image" />
+          <h2>Everest Camp Trek</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore
+            fugit voluptatum enim a, nobis repellendus!
+          </p>
+          <a href="#" class="ctn">Learn More</a>
+        </div>
+        <div class="col">
+          <img src="img/img2.png" alt="image" />
+          <h2>Everest Camp Trek</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore
+            fugit voluptatum enim a, nobis repellendus!
+          </p>
+          <a href="#" class="ctn">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore Content -->
+    <section class="explore">
+      <div class="explore-content">
+        <h1>EXPLORE THE WORLD</h1>
+        <div class="line"></div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+          aperiam dolore odio error. Aperiam rem praesentium ut? Doloremque
+          voluptas alias, facere dignissimos provident odio perferendis quaerat
+          et suscipit minima cupiditate.
+        </p>
+        <a href="#" class="ctn">Learn More</a>
+      </div>
+    </section>
+
+    <!-- Tours section -->
+    <section class="tours">
+      <div class="row">
+        <div class="col">
+          <h1>UPCOMING TOURS & DESTINATION</h1>
+          <div class="line"></div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+            eius facere temporibus corrupti laudantium voluptas quae impedit
+            ducimus ut cupiditate sint vitae praesentium molestias voluptatibus,
+            sequi architecto laboriosam nam doloremque.
+          </p>
+          <a href="#" class="ctn">Learn More</a>
+        </div>
+        <div class="col image-col">
+          <div class="image-gallery">
+            <img src="img/img3.png" alt="image" />
+            <img src="img/img4.png" alt="image" />
+            <img src="img/img5.png" alt="image" />
+            <img src="img/img6.png" alt="image" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="title">
+        <p>Website ini dibuat dengan sepenuh hati wkwkw</p>
+        <p>Gapapalah jelek yg penting belajar & ngoding dulu yekan</p>
+      </div>
+    </footer>
+
+    <!-- script js -->
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const navLinks = document.querySelector(".nav-links");
+
+      menuBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("mobile-menu");
+      });
+    </script>
+  </body>
+</html>
